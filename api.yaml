@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
         - name: kf-api
-          image: dronemodel/kubernetes-fastapi:latest
+          image: dronemodel/kubernetes-fastapi:main
           ports:
             - containerPort: 8080
           imagePullPolicy: Always
