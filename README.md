@@ -15,8 +15,8 @@ Run from active Python environment using `uvicorn`:
 
 Or build and run the Docker container:
 
-    docker build -t 4oh4/kubernetes-fastapi:1.0.0 .
-    docker run -p 8080:8080 --name kubernetes-fastapi 4oh4/kubernetes-fastapi:1.0.0
+    docker build -t docker pull dronemodel/kubernetes-fastapi:latest .
+    docker run -p 8080:8080 --name kubernetes-fastapi dronemodel/kubernetes-fastapi:latest
 
 Navigate to http://localhost:8080/docs to test the API.
 
@@ -36,7 +36,7 @@ The API responds with a greeting, and the result of a long-running calculation o
 
 If desired, push the container to Docker Hub yourself, and change all references to the image accordingly. Replace "4oh4" with your Docker Hub ID):
 
-    docker push 4oh4/kubernetes-fastapi:1.0.0
+    docker push dronemodel/kubernetes-fastapi:latest
 
 You may also need to make the image public as well.
 
